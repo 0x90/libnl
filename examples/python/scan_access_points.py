@@ -17,11 +17,11 @@ More information about the Python libnl is available here:
 Debug messages are available with the -v option, and even more debug messages
 are available by setting the NLCB environment variable to either 'verbose' or
 'debug' like so:
-    NLCB=debug example_scan_access_points.py -v wlan0
+    NLCB=debug scan_access_points.py -v wlan0
 
 Usage:
-    example_show_wifi_interface.py [-k COLUMN] [-n] [-r] [-v ...] <interface>
-    example_show_wifi_interface.py -h | --help
+    show_wifi_interface.py [-k COLUMN] [-n] [-r] [-v ...] <interface>
+    show_wifi_interface.py -h | --help
 
 Options:
     -k --key=COLUMN     Sort table by column name (case insensitive).

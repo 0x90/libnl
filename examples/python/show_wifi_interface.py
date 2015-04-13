@@ -18,12 +18,12 @@ More information about the Python libnl is available here:
 Debug messages are available with the -v option, and even more debug messages
 are available by setting the NLCB environment variable to either 'verbose' or
 'debug' like so:
-    NLCB=verbose example_show_wifi_interface.py print -v
-    NLCB=debug example_show_wifi_interface.py print -v wlan0
+    NLCB=verbose show_wifi_interface.py print -v
+    NLCB=debug show_wifi_interface.py print -v wlan0
 
 Usage:
-    example_show_wifi_interface.py print [options] [<interface>]
-    example_show_wifi_interface.py -h | --help
+    show_wifi_interface.py print [options] [<interface>]
+    show_wifi_interface.py -h | --help
 
 Options:
     -v --verbose    Print debug messages to stderr.

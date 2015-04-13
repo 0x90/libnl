@@ -19,11 +19,11 @@ More information about the Python libnl is available here:
 Debug messages are available with the -v option, and even more debug messages
 are available by setting the NLCB environment variable to either 'verbose' or
 'debug' like so:
-    NLCB=debug example_list_network_interfaces.py print -v
+    NLCB=debug list_network_interfaces.py print -v
 
 Usage:
-    example_list_network_interfaces.py print [options]
-    example_list_network_interfaces.py -h | --help
+    list_network_interfaces.py print [options]
+    list_network_interfaces.py -h | --help
 
 Options:
     -v --verbose    Print debug messages to stderr.
