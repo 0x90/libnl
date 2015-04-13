@@ -20,9 +20,9 @@ def test_todo_issue_validator():
     root_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     assert 'tests' in os.listdir(root_directory)
     generator = (os.path.join(r, s) for r, d, f in os.walk(root_directory)
-                 if '.tox' not in r
+                 if '.tox' not in r and 'examples' not in r
                  for s in f
-                 if s.endswith('.py') and not s.startswith('example_'))
+                 if s.endswith('.py'))
     regex_todo = re.compile(r'^(.*)(?<!\w)(TODO|FIXME)(?!\w)(.*)$', re.IGNORECASE | re.MULTILINE)
 
     # Find all potential TODOs in Python files. May or may not be in comments/docstrings.
